@@ -1,9 +1,8 @@
 # Jira
 
-Write for a reader who may encounter the issue later without the author's
-context. Favor durable facts and actionable structure over narrative.
+Write for a reader who opens the issue later without the author's context.
 
-Include only sections relevant to the work:
+Include only sections that have content in the source:
 
 - Problem or goal
 - Current and expected behavior
@@ -12,23 +11,24 @@ Include only sections relevant to the work:
 - Acceptance criteria
 - Decision, owner, and next step
 
-Use short paragraphs for explanation and bullets for independent facts or
-criteria. Preserve technical identifiers, observed behavior, and uncertainty.
-Remove chronology unless the sequence explains the cause or helps reproduce the
-issue.
+Use short paragraphs for explanation and bullets for independent facts or criteria. Remove chronology unless the sequence explains the cause or the reproduction steps. The issue body states verified facts and decisions directly.
+
+## Comments
+
+Hedge observations, diagnoses, and recommendations. A completed result the source already states stays direct, such as "Deployment failed" or "Approved." Hedge the author's read, such as "this failed" or "X is the problem."
 
 ## Platform features
 
-Apply the shared rules in [../links.md](../links.md) when the draft references
-work artifacts or people. Jira-specific forms:
+A Jira issue key stays bare, e.g. `PROJ-123`.
 
-- Prefer the bare ticket key for same-site Jira issues when the key will
-  autolink, e.g. `PROJ-123`.
-- Prefer a labeled link for external artifacts with a known URL: GitHub repos,
-  PRs, Confluence pages, and similar work artifacts.
-- Prefer `@` mentions when assigning or calling out a person and the editor
-  supports them.
+Link syntax when [../links.md](../links.md) says to link an external artifact: `[name](url)`.
 
-Bad: `See the implementation in https://github.com/example/web-ui.`
+Keep `@name` only when the source already contains that mention.
 
-Good: `See the implementation in [web-ui](https://github.com/example/web-ui).`
+Source: `See the implementation in the web-ui repo: https://github.com/example/web-ui.`
+
+Output: `See the implementation in the [web-ui](https://github.com/example/web-ui) repo.`
+
+Source: `See the implementation in https://github.com/example/web-ui.`
+
+Output: `See the implementation in https://github.com/example/web-ui.`

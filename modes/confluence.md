@@ -1,32 +1,27 @@
 # Confluence
 
-Optimize durable documentation for scanning and later retrieval.
-
 - Start with the document's purpose or decision.
-- Use descriptive headings that reveal the structure.
-- Use prose for reasoning and bullets for parallel items.
-- Record decisions, rationale, constraints, owners, and consequences.
-- Include implementation details only when readers need them to understand,
-  operate, or change the system.
-- Avoid repeating the introduction in a closing summary.
-
-Short paragraphs are a tool, not a target. Keep related reasoning together when
-splitting it would make the reader reconstruct the connection.
+- State verified facts and decisions directly. Do not hedge them.
+- Record decisions, rationale, constraints, owners, and consequences that are in the source.
+- Include implementation details only when the source needs them for someone to operate or change the system.
+- Do not repeat the introduction in a closing summary.
+- Keep a cause and its consequence in the same paragraph.
+- When pasted material only restates a linked ticket or page, replace that material with the link. Keep pasted evidence, reproduction steps, decisions, and context this document adds.
 
 ## Platform features
 
-Apply the shared rules in [../links.md](../links.md) when the draft references
-work artifacts or pages. Confluence-specific forms:
+Link syntax when [../links.md](../links.md) says to link: `[name](url)`.
 
-- Link to source material instead of reproducing it without added context.
-- Prefer Confluence mentions and page links when the editor supports them.
-- Prefer a labeled link for tickets, repos, PRs, related Confluence pages, and
-  similar work artifacts with a known URL.
+Keep a Confluence mention only when the source already contains it. A Jira issue key stays bare unless the source also contains its URL.
 
-Bad: `Tracked in PROJ-123.`
+Source: `Tracked in PROJ-123.`
 
-Good: `Tracked in [PROJ-123](https://.../browse/PROJ-123).`
+Output: `Tracked in PROJ-123.`
 
-Bad: `The implementation is in https://github.com/example/web-ui.`
+Source: `Tracked in PROJ-123: https://example.atlassian.net/browse/PROJ-123.`
 
-Good: `The implementation is in [web-ui](https://github.com/example/web-ui).`
+Output: `Tracked in [PROJ-123](https://example.atlassian.net/browse/PROJ-123).`
+
+Source: `The implementation is in https://github.com/example/web-ui.`
+
+Output: `The implementation is in https://github.com/example/web-ui.`

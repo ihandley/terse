@@ -1,35 +1,18 @@
 # Voice
 
-Default engineering voice for coworkers: direct, conversational, concrete,
-curious, candid. Medium conventions and density first; this file only keeps
-useful fingerprints and stops generic "professional" sanding.
+Default voice when no personal file is loaded: direct, conversational, concrete, candid. This file loses to the user's explicit instruction, the loaded mode, and `SKILL.md`.
 
-## Personal override
-
-Prefer a personal or project voice file when present (first match wins):
-
-1. `~/.claude/terse-voice.md`
-2. `<repo>/.claude/terse-voice.md`
-3. This file (skill default)
-
-Copy this file to `~/.claude/terse-voice.md` and edit to add your fingerprints.
-Do not edit the installed copy — skill updates overwrite it.
+Copy this file to `~/.claude/terse-voice.md` to keep a personal voice. Skill updates overwrite the installed copy.
 
 ## §1 Cadence
 
-- Lead with the real point. No ceremonial intro.
-- Concrete observation → why it matters → what you want next.
-- Contractions/fragments OK when natural in the medium. Default short; write
-  more only when the subject warrants it.
-- Close informally. No padded sign-off ("let me know if you have questions!").
+- No ceremonial intro.
+- State the concrete observation, then the next action. Include why only when `SKILL.md` §1 requires that clause.
+- No padded sign-off ("let me know if you have questions!"). `SKILL.md` §3 deletes a sign-off when a question ends the message.
 
 ## §2 Preserve
 
-Keep when in the source or clearly intended: strong relevant opinions;
-specificity; mild human roughness; useful sharp edges (conviction, severity,
-humor); mid-thought candid openers ("honestly", "personally") when they carry
-the point (not theatrical standalone hooks). Praise is never a useful edge;
-delete it per `principles.md`.
+Keep when present in the source: a strong relevant opinion; a specific detail; mild roughness; conviction, severity, or humor; a mid-sentence "honestly" or "personally" that carries an opinion or uncertainty. Delete a standalone "Honestly?" or "Look,". Praise: `SKILL.md` §3.
 
 ## §3 Do not auto-soften
 
@@ -40,41 +23,36 @@ Do not replace vivid wording with corporate euphemism by default:
 | painful | suboptimal |
 | this makes no sense | there may be another perspective |
 
-Soften only for accidental hostility, mind-reading, or derailing the ask.
+Soften only when the source insults a person, states their motive as fact, or the wording hides the request.
 
-## §4 Ask, don't order
+## §4 Hedge
 
-When directing someone else's work or floating a diagnosis: prefer questions /
-invitations over commands and confident claims. Match the author's certainty;
-do not inflate it.
+In Slack, Jira comments, and pull request comments, hedge an observation, a diagnosis, and a recommendation. Vary the wording. The table shows the shape. A Confluence page, a Jira issue body, and a PR description state the verified fact directly.
 
-| Avoid | Prefer |
+A completed result the source already states stays direct, such as "Deployment failed" or "Approved." Hedge the author's read, such as "this failed" or "X is the problem."
+
+| Avoid | Example |
 | --- | --- |
-| Make this change | Consider making this change / What do you think about making this change? |
-| I think this is the problem | Could this be the problem? |
-| You should X | Would X work here? / Curious if X is worth trying |
+| This failed | It looks like this failed |
+| X is the problem | Could X be causing this? |
+| Do X | Should we do X? |
 
-Keep a direct claim or request when the author is sure, or the source already
-commits. Illocution and epistemic temperature only, not vivid-word sanding (§3).
+This section does not replace vivid wording (§3). Place the question last (`SKILL.md` §3).
 
 ## §5 Audience
 
-Adjust polish, not identity.
+Change length and directness. Do not add an opinion the source does not contain (§2, §7). A hedge (§4) may lower the stated certainty of an observation.
 
 | Audience | Adjust |
 | --- | --- |
-| Close coworker | More candid; less shared-context explanation |
-| Manager / senior | Clear purpose and ask; critique systems/outcomes, not motives |
-| Unfamiliar / executive | Concise; keep 1–2 distinctive specifics; cut tangents first |
+| Close coworker | Cut explanation of context they share |
+| Manager / senior | State the purpose and the ask. Critique the system or outcome, not a person's motive |
+| Unfamiliar / executive | Cut tangents first. Keep at most two concrete specifics from the source |
 
 ## §6 Work references
 
-- Do not bury a ticket ID as a mid-sentence modifier ("I fixed PROJ-123 in auth").
-  State it plainly or lead with it.
-- Ticket/repo references → inline links per [links.md](links.md).
+Do not bury a ticket ID inside a sentence ("I fixed PROJ-123 in auth"). State the ID in its own sentence. Link form: [links.md](links.md).
 
 ## §7 Never invent
 
-Do not invent personal experiences, opinions, commitments, or emotional
-reactions the author has not supplied. Preserve uncertainty when context is
-incomplete.
+Do not add a personal experience, opinion, commitment, or emotional reaction that the source does not contain. If context is missing, keep the source's uncertainty.
