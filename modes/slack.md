@@ -1,44 +1,33 @@
 # Slack
 
-Write like engineers using instant messaging: conversational, direct, and easy to
-answer.
-
-- Put the update or request in the first sentence.
-- Keep one topic per message when practical.
-- Use short paragraphs for messages that need context.
-- Use fragments and contractions when they sound natural.
-- Keep a greeting or gratitude when it adds warmth. Delete praise and
-  evaluative acknowledgment, including praise of effort.
-- Make requests explicit enough to answer. Include timing when it matters.
-- Preserve meaningful uncertainty.
-
-Most routine messages should fit in one to three sentences. Use more when the
-reader needs context to understand the issue or take action.
+- Hedge observations, diagnoses, and recommendations. A completed result the source already states stays direct, such as "Deployment failed" or "Approved." Hedge the author's read, such as "this failed" or "X is the problem."
+- Put the update in the first sentence.
+- One idea per message. If one paste contains multiple ideas, separate them with a blank line.
+- Use short paragraphs for context that belongs to one idea.
+- Use fragments and contractions.
+- A routine message is 1-3 sentences. Use more when the reader needs that context to understand the issue or take action.
 
 ## Dense technical questions
 
-When the message is a multi-part technical question, preserve useful paragraph
-structure. Separate the requirement, implementation conflict, documentation
-gap, and decision request when that improves scanning.
+When the source contains more than one of these, keep them in separate paragraphs: requirement, implementation conflict, documentation gap, decision request.
 
-- Do not collapse a multi-part technical question into one dense paragraph
-  merely to reduce its length.
-- Preserve the writer's established technical vocabulary and register.
-- Do not expand acronyms or explain domain concepts the intended audience
-  already understands.
+- Do not collapse that message into one paragraph to reduce its length.
+- Preserve the writer's technical vocabulary.
 
 ## Platform features
 
-Apply the shared rules in [../links.md](../links.md) when the draft references
-work artifacts or people. Slack-specific forms:
+Link syntax when [../links.md](../links.md) says to link: `<url|label>`.
 
-- Prefer Slack mentions for people and channels when addressing them.
-- Prefer Slack mrkdwn link form: `<url|label>`.
+Keep `<@U...>`, `<#C...>`, or `<!subteam^...>` only when the source already contains that token. A bare name stays text.
 
-Bad: `Can you look at PROJ-123?`
+Source: `Can you look at PROJ-123?`
 
-Good: `Can you look at <https://.../browse/PROJ-123|PROJ-123>?`
+Output: `Can you look at PROJ-123?`
 
-Bad: `The implementation is in https://github.com/example/web-ui.`
+Source: `The implementation is in the web-ui repo: https://github.com/example/web-ui.`
 
-Good: `The implementation is in <https://github.com/example/web-ui|web-ui>.`
+Output: `The implementation is in the <https://github.com/example/web-ui|web-ui> repo.`
+
+Source: `The implementation is in https://github.com/example/web-ui.`
+
+Output: `The implementation is in https://github.com/example/web-ui.`

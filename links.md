@@ -1,17 +1,16 @@
 # Links and references
 
-Shared rules for work-artifact references. Load this file only when the draft
-mentions tickets, repos, PRs, Confluence pages, URLs, or people/channels to
-mention. Medium-specific syntax lives in the mode file.
+Use the syntax defined by the loaded mode.
 
-Use the native capabilities of the destination platform when they improve
-readability. Prefer inline links, native mentions, and native ticket or PR
-references over bare identifiers or raw URLs.
+| Source contains | Output |
+| --- | --- |
+| A name already written in the source, plus a known URL | Link that name with the mode's syntax |
+| A URL whose only candidate label is a path segment | Keep the raw URL |
+| Identifier without a URL | Keep the exact identifier |
+| Platform mention token or ID | Preserve the native mention |
+| Person or channel name without a mention token or ID | Keep the name as text |
 
-- Prefer a labeled link when the artifact has a known URL: tickets, repos, PRs,
-  Confluence pages, and similar work artifacts.
-- Do not invent URLs, mention IDs, or link syntax.
-- If the URL is unavailable, keep the plain identifier.
-- Link the readable name. Do not leave a raw URL as the visible text.
-- Do not invent platform-specific formatting when the destination format is
-  unknown; keep the plain identifier or a readable labeled form from context.
+A name is words already written in the source. A URL path segment is not a name.
+Never invent a URL, label, identifier, mention token, or platform syntax. When
+the mode defines an auto-linked ticket or PR form, use it instead of wrapping
+the identifier in a link.

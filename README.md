@@ -1,15 +1,17 @@
 # Terse
 
-Rewrites workplace communication in a direct, natural engineering voice, per
-[`principles.md`](principles.md)'s reader-effort priorities.
+Rewrites workplace communication to minimize length and maximize signal.
 
 ## Layout
 
 ```text
 terse/
-├── SKILL.md          # Discovery metadata and execution workflow
+├── SKILL.md          # Objective, workflow, writing rules, final check
+├── scripts/
+│   └── check-dashes  # Exit 1 if the draft contains an em dash or en dash
+├── agents/
+│   └── openai.yaml   # Codex picker metadata; model-invoked
 ├── README.md         # Repository guide
-├── principles.md     # Shared priorities, rules, and final check
 ├── voice.md          # Shipped default voice (override with a personal file)
 ├── anti-ai-tells.md  # Compact LLM-tell scrub (from humanizer patterns)
 ├── links.md          # Shared link and reference rules
