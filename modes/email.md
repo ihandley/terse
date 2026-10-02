@@ -22,10 +22,10 @@ work artifacts. Email-specific forms:
 - In markdown email, use `[label](url)`. In HTML email, use a normal anchor.
 - In plain text, prefer `Label <url>` over a bare URL mid-sentence.
 
-Bad: `Can you look at JET-74429?`
+Bad: `Can you look at PROJ-123?`
 
-Good: `Can you look at [JET-74429](https://.../browse/JET-74429)?`
+Good: `Can you look at [PROJ-123](https://.../browse/PROJ-123)?`
 
-Bad: `The implementation is in https://github.com/example/lvt_ui.`
+Bad: `The implementation is in https://github.com/example/web-ui.`
 
-Good: `The implementation is in [lvt_ui](https://github.com/example/lvt_ui).`
+Good: `The implementation is in [web-ui](https://github.com/example/web-ui).`

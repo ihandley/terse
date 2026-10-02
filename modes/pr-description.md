@@ -13,7 +13,7 @@ content:
 ## Purpose
 [1-2 sentences: what problem this solves]
 
-**Ticket:** [JET-XXXX](https://liveviewtech.atlassian.net/browse/JET-XXXX)
+**Ticket:** [PROJ-123](https://example.atlassian.net/browse/PROJ-123)
 
 ## Key Changes
 - [High-level architectural decisions, breaking changes, or non-obvious logic only]

@@ -35,10 +35,10 @@ work artifacts or people. Slack-specific forms:
 - Prefer Slack mentions for people and channels when addressing them.
 - Prefer Slack mrkdwn link form: `<url|label>`.
 
-Bad: `Can you look at JET-74429?`
+Bad: `Can you look at PROJ-123?`
 
-Good: `Can you look at <https://.../browse/JET-74429|JET-74429>?`
+Good: `Can you look at <https://.../browse/PROJ-123|PROJ-123>?`
 
-Bad: `The implementation is in https://github.com/example/lvt_ui.`
+Bad: `The implementation is in https://github.com/example/web-ui.`
 
-Good: `The implementation is in <https://github.com/example/lvt_ui|lvt_ui>.`
+Good: `The implementation is in <https://github.com/example/web-ui|web-ui>.`

@@ -13,7 +13,7 @@ Prefer a personal or project voice file when present (first match wins):
 3. This file (skill default)
 
 Copy this file to `~/.claude/terse-voice.md` and edit to add your fingerprints.
-Do not edit the plugin copy — marketplace updates overwrite it.
+Do not edit the installed copy — skill updates overwrite it.
 
 ## §1 Cadence
 
@@ -69,7 +69,7 @@ Adjust polish, not identity.
 
 ## §6 Work references
 
-- Do not bury a ticket ID as a mid-sentence modifier ("I fixed JET-4521 in auth").
+- Do not bury a ticket ID as a mid-sentence modifier ("I fixed PROJ-123 in auth").
   State it plainly or lead with it.
 - Ticket/repo references → inline links per [links.md](links.md).
 

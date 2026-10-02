@@ -9,7 +9,6 @@ tags:
   - communication
 metadata:
   author: ian.handley
-  audience: all-guild
 ---
 
 # Terse

@@ -23,12 +23,12 @@ Apply the shared rules in [../links.md](../links.md) when the draft references
 work artifacts or people. Jira-specific forms:
 
 - Prefer the bare ticket key for same-site Jira issues when the key will
-  autolink, e.g. `JET-74429`.
+  autolink, e.g. `PROJ-123`.
 - Prefer a labeled link for external artifacts with a known URL: GitHub repos,
   PRs, Confluence pages, and similar work artifacts.
 - Prefer `@` mentions when assigning or calling out a person and the editor
   supports them.
 
-Bad: `See the implementation in https://github.com/example/lvt_ui.`
+Bad: `See the implementation in https://github.com/example/web-ui.`
 
-Good: `See the implementation in [lvt_ui](https://github.com/example/lvt_ui).`
+Good: `See the implementation in [web-ui](https://github.com/example/web-ui).`
