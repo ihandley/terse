@@ -1,0 +1,12 @@
+{
+  "name": "terse",
+  "version": "0.1.0",
+  "description": "Rewrites or drafts Slack, email, Jira, Confluence, and pull-request text to minimize length and maximize signal.",
+  "author": {
+    "name": "Ian Handley"
+  },
+  "repository": "https://github.com/ihandley/terse",
+  "license": "MIT",
+  "keywords": ["writing", "slack", "email", "jira", "confluence"],
+  "skills": ["./"]
+}
