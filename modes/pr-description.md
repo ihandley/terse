@@ -1,6 +1,8 @@
 # Pull request description
 
-The diff shows what changed. The description explains why and the non-obvious context. State verified facts and decisions directly. Do not hedge them.
+When another active skill requires a PR body structure or visual, preserve it. Apply every content rule in `SKILL.md` and in the Rules section below within that structure. Do not apply the Structure section, and do not drop a required section or visual to shorten the body. When rewriting an existing draft, treat its sections and visuals as required when they match a known PR template.
+
+Otherwise, the diff shows what changed. The description explains why and the non-obvious context. State verified facts and decisions directly. Do not hedge them.
 
 ## Structure
 
