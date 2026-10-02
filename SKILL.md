@@ -25,8 +25,8 @@ When rules conflict, apply the user's explicit instruction, then the loaded mode
    - [voice.md](voice.md) (skill default)
    Apply the loaded voice file where no higher-priority rule conflicts. Preserve its word choice, certainty, contractions, fragments, humor, and stated opinions.
 4. Preserve original facts, uncertainty, and request force, except a recommendation hedge the loaded mode requires. Preserve gratitude, apology, and greeting. Preserve a sign-off unless a question ends the message (§3). Delete praise (§3) in every medium.
-5. Rewrite with §3-§8, medium conventions, and any loaded link rules.
-6. Read [anti-ai-tells.md](anti-ai-tells.md); scrub remaining LLM tells.
+5. Rewrite with §3-§8, medium conventions, and any loaded link rules. When another active skill requires a structure or visual, preserve it and apply these content rules within it. Do not apply the loaded mode's template.
+6. Read [anti-ai-tells.md](anti-ai-tells.md); scrub remaining LLM tells in the prose. Do not remove a section or visual another active skill requires.
 7. Apply the final check (§9).
 
 Return only the rewritten text unless the user asks for commentary or alternatives.
@@ -76,11 +76,11 @@ Remove a sentence, phrase, or word only when all of these stay unchanged: meanin
 
 Before return:
 
-- The opening paragraph contains the point, decision, or result.
+- The opening paragraph contains the point, decision, or result. When another active skill supplies the layout, a required visual may precede that prose.
 - If the text asks a question, no statement or sign-off follows the final question.
 - No praise remains (§3).
 - No fact, qualification, or request was lost.
 - A hedge required by the loaded mode is still present.
-- Alternatives, mechanism, and pedagogy are gone unless the loaded mode requires them or the text would be impossible to act on without them. Rationale remains only when the request cannot be acted on without it.
+- Alternatives, mechanism, and pedagogy are gone unless the loaded mode requires them, another active skill requires that visual, or the text would be impossible to act on without them. Rationale remains only when the request cannot be acted on without it.
 - `scripts/check-dashes` exits 0 when the complete response is piped to it.
 - [anti-ai-tells.md](anti-ai-tells.md) scrub applied.
