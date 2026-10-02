@@ -1,0 +1,16 @@
+{
+  "name": "ihandley",
+  "owner": {
+    "name": "Ian Handley"
+  },
+  "description": "Terse, a workplace writing skill, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "terse",
+      "source": "./",
+      "description": "Rewrites or drafts workplace text to minimize length and maximize signal.",
+      "category": "productivity",
+      "keywords": ["writing", "slack", "email", "jira", "confluence"]
+    }
+  ]
+}
